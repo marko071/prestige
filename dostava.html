@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="img/ikonica.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="css/style.css" text="text/css" />
+		<title>Prestige</title>
+	</head>
+	
+	<body>
+		<header>
+			<div id="logo">
+				<h1><a href="index.html">Prestige</a></h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="muski.html">Muški</a></li>	
+					<li><a href="zenski.html">Ženski</a></li>
+					<li><a href="akcija.html">Akcija</a></li>	
+					<li><a href="dostava.html" class="active">Dostava</a></li>	
+					<li><a href="onama.html">O nama</a></li>	
+					<li><a href="autor.html">Autor</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<div id="main">
+			<div id="formaOkvir">
+				<h2>Podaci o kupcu:</h2>
+				<div id="forma">
+					<form id="formaDostava" action="obrada.php" method="post">
+						<input type="text" id="ime" name="ime" placeholder="Ime" required="required" />
+						<input type="text" id="prezime" name="prezime" placeholder="Prezime" required="required" /><br/>
+						<input type="email" id="email" name="email" placeholder="E-mail" required="required" />
+						<input type="tel" id="tel" name="tel" placeholder="Broj telefona" required="required" /><br/>
+						<input type="text" id="ulica" name="ulica" placeholder="Ulica" required="required" />
+						<input type="text" id="brUlice" name="brUlice" placeholder="Broj ulice" required="required" /><br/>
+						<input type="text" id="grad" name="grad" placeholder="Grad" required="required" />
+						<input type="text" id="brPostanski" name="brPostanski" placeholder="Poštanski broj" required="required" /><br/>
+						<select id="izaberiteParfem" name="izaberiteParfem">
+							<option>Izaberite parfem</option>
+							<option>Versace Eros</option>
+							<option>Dior Sauvage</option>
+							<option>Gucci Guilty</option>
+							<option>Rabanne One Million</option>
+							<option>Versace Dylan Blue</option>
+							<option>Rabanne Invictus Victory Elixir</option>
+							<option>Giorgio Armani Acqua Di Gio</option>
+							<option>Moschino Toy Boy</option>
+							<option>Hugo Boss Bottled Pacific</option>
+							<option>Carolina Herrera Good Girl</option>
+							<option>Jean Paul Gultier La Belle</option>
+							<option>Jean Paul Gultier Scandal</option>
+							<option>Escada Show Me Love</option>
+							<option>Rabanne Lady Million Royal</option>
+							<option>Dsquared2 Red Pour</option>
+							<option>Gucci Bloom Ambrosia</option>
+							<option>Ysl Black Opium</option>
+							<option>Armani Emporio She</option>
+						</select><br/><br/>
+						<textarea placeholder="Napomena"></textarea>
+						<input type="submit" id="poruci" name="poruci" value="Poruči" />
+						
+					</form>
+				</div>
+			</div>	
+		</div>	
+		<footer>
+			<div class="footerBlok">
+				<h3>Kontakt</h3>
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<label>+381 64 5885525</label><br/>
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<label>marko&#46;desic&#46;74&#46;23&#64;ict&#46;edu&#46;rs</label>
+			</div>
+			<div id="footerBlok">
+				<h3>Newsletter</h3><br/>
+				<form action="index.php" method="post">
+					<input type="email" class="nletter" placeholder="Unesite Vašu e-mail adresu" required="required"/>
+					<a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+				</form>
+				<a href="https://www.instagram.com/markodesiic/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+				<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+				<a href="rss.xml" target="_blank"><i class="fa-solid fa-rss"></i></a>
+				<a href="sitemap.xml"><i class="fa-solid fa-sitemap"></i></a>
+				<p>&#169;2023 - Sva prava zadržana</p></a>
+			</div>
+			<div class="footerBlok">
+				<h3 id="kl">Korisni linkovi</h3>
+				<a href="index.html">Početna</a></br>
+				<a href="muski.html">Muški</a></br>
+				<a href="zenski.html">Ženski</a></br>
+				<a href="akcija.html">Akcija</a></br>
+				<a href="dostava.html">Dostava</a></br>
+				<a href="onama.html">O nama</a><br/>
+				<a href="autor.html">Autor</a></br>
+			</div>
+		</footer>
+	</body>	
+</html>	

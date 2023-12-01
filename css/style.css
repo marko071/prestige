@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.cleaner{
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}	
+
+header{
+    width: 100%;
+	height: 70px;
+    background-color: #e6d4cd; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	z-index: 2;
+}
+
+#logo{
+	padding-left: 30px;
+	text-transform: uppercase;
+}
+
+#logo a{
+	color: #584d3d;
+}
+
+#logo a:hover{
+	color: #9e7c7c;
+	transition: 0.5s;
+	
+}
+
+nav{
+	display: flex;
+	padding-right: 20px;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline;
+	text-transform: uppercase;
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+nav ul li a{
+	color: #584d3d;
+}
+
+nav ul li a:hover{
+	color: #9e7c7c;
+	transition: 0.5s;
+}
+
+.active{
+	color: #9e7c7c;
+	border-bottom: 2px solid #9e7c7c;
+}
+/*POCETNA STRANICA*/
+/*POZADINSKA SLIKA*/
+#bg-slika{
+	width: 100%;
+	height: 870px;
+	background-image: url("../img/pozadina.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#pozadina{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(24, 24, 35, 0.8);
+}	
+
+#pozadinaText p{
+	position: absolute;
+	color: #e6d4cd;
+	top: 425px;
+	left: 150px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#pozadinaText h2{
+	position: absolute;
+	color: #e6d4cd;
+	top: 350px;
+	left: 50px;
+	font-size: 60px;
+}
+
+#pozadinaText h2 a{
+	text-transform: uppercase;
+	/*color: #777674;*/
+	color: #9e7c7c;
+}
+
+#pozadinaText h2 a:hover{
+	color: #584d3d;
+	transition: 0.5s;
+}
+/*USLUGE*/
+#blok-usluge {
+	width:100%;
+	height: 500px;
+}
+
+.naslov{
+	padding-top: 25px;
+	width: 80%;
+    text-align: center;
+	font-size: 22px;
+	margin:0px auto;
+	text-transform:uppercase;
+	color:#584d3d;
+}
+
+.hr{
+    border-bottom: 4px solid #e6d4cd;
+    width: 100px;
+    margin: 3px auto;
+}
+
+#usluge{
+	display:flex;
+	justify-content:space-between;
+	margin:0px auto;
+	flex-wrap:wrap;
+	height: 500px;	
+	font-size:40px;
+	text-align:center;
+	width:80%;	
+}
+
+.usluga{
+	margin: 0px auto;
+	padding:12px 50px 20px 50px;
+	width:20%;
+	height: 300px;
+	background-color: rgba(207, 178, 126, 0.3);
+	border-radius:30px;
+	box-shadow: 5px 5px 5px;
+}
+
+.usluga:hover{
+	box-shadow: none;
+	transition: 0.5s;
+}
+
+.fa-truck{
+	font-size: 100px;
+	padding-top: 40px;
+	color: #9e7c7c;
+	padding-bottom: 30px;
+}
+
+.fa-truck:hover{
+	color: #584d3d;
+	transition: 0.5s;
+}
+
+.usluga p{
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.fa-check-circle{
+	font-size: 100px;
+	padding-top: 40px;
+	color: #9e7c7c;
+	padding-bottom: 30px;
+}
+
+.fa-star{
+	font-size: 100px;
+	padding-top: 40px;
+	color: #9e7c7c;
+	padding-bottom: 30px;
+}
+/*BLOK POPULARNO*/
+#pozadinaPopularno{
+	width: 100%;
+	height: 700px;
+	background-color: rgba(50, 40, 36, 0.7);
+	position: absolute;
+}	
+
+#blok-popularno{
+	width:100%;
+	height: 700px;
+	background-image: url("../img/popularno.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#popularno{
+	width: 80%;
+	height: 700px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.proizvod{
+	width: 20%;
+	height: 480px;
+	background-color: rgba(207, 178, 126, 0.3);
+	padding: 12px 50px 40px 50px;
+	margin: 0px auto;
+	font-size: 25px;
+	border-radius: 30px;	
+	position: relative;
+}
+
+.proizvodPopularno{
+	width: 20%;
+	height: 480px;
+	background-color: rgba(207, 178, 126, 0.7);
+	padding: 12px 50px 40px 50px;
+	margin: 0px auto;
+	font-size: 25px;
+	border-radius: 30px;	
+	position: relative;
+}
+
+.proizvod:hover{
+	box-shadow: 0 10px 10px 10px #e6d4cd;
+	transition: 0.5s;
+}
+
+.proizvodPopularno:hover{
+	box-shadow: 0 10px 10px 10px #e6d4cd;
+	transition: 0.5s;
+}
+
+#diorSlika{
+	width: 90%;
+}
+	
+.proizvod .imeParfema{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.proizvodPopularno .imeParfema{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.proizvod .cenaParfema{
+	color: #333333;
+	padding-bottom: 5px;
+	font-size: 25px;
+	
+}
+
+.proizvodPopularno .cenaParfema{
+	color: #333333;
+	padding-bottom: 5px;
+	font-size: 25px;
+	
+}
+
+.kupi{
+	width: 23%;
+	height: 45px;
+	background-color: #9e7c7c;
+	margin: 0px auto;
+	border-radius: 30px;
+	position: absolute;
+	bottom: -20px;
+	left: 150px;
+
+}
+
+.kupi p{
+	padding: 8px 0px;
+	color: white;
+}
+
+.kupi:hover{
+	background-color: green;
+	transition: 0.5s;
+}
+
+.boja h2{
+	color: #e6d4cd;
+}
+#popularno .naslov{
+	z-index: 1;
+}
+/*BLOK AKCIJA*/
+#blok-akcija{
+	width: 100%;
+	height: 700px;
+	position:relative;
+}
+
+#akcija{
+	width: 80%;
+	height: 800px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content: flex-start;
+}
+
+.akcija{
+	padding-bottom: 50px;
+}
+
+.proizvod .staraCena{
+	color: #333333;
+	padding-bottom: 5px;
+	font-size: 25px;
+	text-decoration: line-through;
+	
+}
+
+.proizvod .novaCena{
+	color: red;
+	padding-bottom: 5px;
+	font-size: 25px;	
+}
+
+#guiltySlika, #laBelleSlika, #erosSlika, #goodGirlSlika, #oneMilionSlika{
+	width: 120%;
+	position:relative;
+	left: -25px;
+}
+
+#blokVise{
+	margin: 0px auto;
+	width: 50%;
+	height: 150px;
+	position: relative;
+}
+
+#vise{
+	width: 25%;
+	height: 60px;
+	background-color: #9e7c7c;
+	position: absolute;
+	top: 30px;
+	left: 350px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#vise p{
+	padding-top: 15px;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+#vise:hover{
+	background-color: #584D3D;
+	transition: 0.5s;
+}
+
+/*FOOTER*/	
+footer{
+    width: 100%;
+	height: 210px;
+    background-color: #e6d4cd; 	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footerBlok{
+	width: 20%;
+	height: 200px;
+}
+.footerBlok h3{
+	padding-top: 10px;
+	padding-left: 50px;
+	font-size: 30px;
+	padding-bottom: 10px;
+	color: #584d3d;
+}
+
+.footerBlok .fa{
+	padding-top: 10px;
+	padding-left: 50px;
+	font-size: 18px;
+	color: #584d3d;
+}
+
+.footerBlok .fa-brands, .fa-solid{
+	padding-top: 10px;
+	padding-left: 30px;
+	font-size: 30px;
+	text-align: center;
+	color: #584d3d;
+}
+
+.fa-phone, .footerBlok label{
+	font-size: 18px;
+	color: #584d3d;
+}
+
+.footerBlok a{
+	padding-top: 10px;
+	padding-left: 140px;
+	color: black;
+	font-size: 18px;
+	color: #584d3d;
+}
+
+.footerBlok a:hover{
+	text-decoration:underline;
+	transition: 0.5s;
+}
+
+#footerBlok a i:hover{
+	transition: 0.5s;
+	color: #9e7c7c;
+}
+
+#footerBlok{
+	width: 20%;
+	height: 200px;
+	position: relative;
+}
+
+#footerBlok .fa-brands, .fa-solid{
+	padding-top: 10px;
+	padding-left: 50px;
+	font-size: 30px;
+	color: #584d3d;
+}
+
+#footerBlok h3{
+	padding-top: 10px;
+	font-size: 30px;	
+	text-align: center;
+	color: #584d3d;
+}
+
+.nletter{
+    padding: 10px;
+    border-radius: 5px;
+	position: relative;
+	left: 60px;
+	top: -15px;
+}
+.fa-paper-plane{
+	position: relative;
+	left: 30px;
+	top: -9px;
+}
+
+input{
+    border: 1px solid #584d3d;
+}
+
+input:focus{
+    outline: #584d3d;
+    border:1px solid #584d3d;
+    box-shadow: 0 0 8px #584d3d;
+}
+select{
+    border: 1px solid #584d3d;
+}
+select:focus{
+    outline: #1e3050;
+    border:1px solid #584d3d;
+    box-shadow: 0 0 8px #584d3d;
+}
+textarea{
+    border: 1px solid #584d3d;
+}
+textarea:focus{
+    outline: #584d3d;
+    border:1px solid #584d3d;
+    box-shadow: 0 0 8px #584d3d;
+}
+
+#footerBlok p{
+	position: absolute;
+	text-align: center;
+	bottom: 10px;
+	left: 75px;
+	font-size: 18px;
+	color: #584d3d;
+}
+
+#kl{
+	padding-left: 140px;
+}
+/*STRANICA MUSKI ZENSKI AKCIJA*/
+#red-jedan, #red-dva, #red-tri{
+	width: 100%;
+	height: 600px;
+}
+
+#red-jedan{
+	padding-top: 130px;
+}
+
+#invictusVictoryElixirSlika, #acquaDiGio, #dylanSlika, #toyBoySlika, #hugoBossSlika, #scandalSlika, #showMeLoveSlika, #ladyMillionRoyalSlika, #redPourSlika, #bloomSlika, #blackOpiumSlika{
+	width: 120%;
+	position:relative;
+	left: -25px;
+}
+
+#emporioSlika{
+	width: 120%;
+	position:relative;
+	left: -25px;	
+}
+/*STRANICA MUSKI*/
+#muski-slika{
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/muski.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.pozadinaMuskiZenskiAkcija{
+	width: 100%;
+	height: 800px;
+	background-color: rgba(24, 24, 35, 0.6);
+}
+
+#muskiText{
+	position: absolute;
+	color: #e6d4cd;
+	top: 350px;
+	left: 32%;
+	font-weight: bold;
+	font-size: 70px;
+	animation-name: naslov-animacija;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes naslov-animacija{
+	from{left: -800px;}
+	to{left: 32%;}
+}
+/*STRANICA ZENSKI*/
+
+#zenski-slika{
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/zenski.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#zenskiText{
+	position: absolute;
+	color: #e6d4cd;
+	top: 350px;
+	left: 32%;
+	font-weight: bold;
+	font-size: 70px;
+	animation-name: naslov-animacija;
+	animation-duration: 1.5s;
+}
+/*STRANICA AKCIJA*/
+
+#akcija-slika{
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/akcija.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#akcijaText{
+	position: absolute;
+	color: #e6d4cd;
+	top: 350px;
+	left: 43%;
+	font-weight: bold;
+	font-size: 70px;
+	animation-name: naslov-animacija-akcija;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes naslov-animacija-akcija{
+	from{left: -800px;}
+	to{left: 43%;}
+}	
+/*STRANICA DOSTAVA*/
+#main{
+ width: 100%;
+ height: 900px;
+ text-align: center;
+ font-size: 22px;
+}
+
+#main h2{
+	padding-top: 50px;
+	color: #e6d4cd;
+}
+
+#formaOkvir{
+	width: 50%;
+	height: 870px;
+	background-color: #9e7c7c;
+	margin: 30px auto;
+	border-radius: 30px;
+}
+
+#formaOkvir:hover{
+	box-shadow: 10px 10px 3px #d9c0b6;
+}
+
+#forma{
+	padding-top: 50px;
+	width: 800px;
+	height: 700px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+}
+
+#formaDostava{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0px auto;
+}
+#formaDostava input{
+	width: 350px;
+	height: 50px;
+	border-radius: 15px;
+	text-indent: 5px;
+	font-size: 18px;
+}
+
+#poruci{
+	margin: 0px auto;
+}
+
+#poruci:hover{
+	background-color: #e6d4cd;
+	transition: 0.5s;
+}
+
+#izaberiteParfem{
+	width: 400px;
+	height: 50px;
+	border-radius: 15px;
+	text-indent: 5px;
+	margin: 0px auto;
+	font-size: 18px;
+}
+
+textarea{
+	resize: none;
+	width: 100%;
+	height: 250px;
+	border-radius: 15px;
+	text-indent: 10px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+#ime, #email, #ulica, #grad{
+	margin-right: 90px;
+}
+/*STRANICA AUTOR*/
+#autor{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+}
+#drzac-autor{
+	width: 80%;
+	margin: 0px auto;
+	height: 700px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#autor-slika{
+	position: relative;
+	width: 600px;
+	height: 450px;
+	animation-name: slika-animacija;
+	animation-duration: 2s;
+}
+#autor-slika img{
+	height: 450px;
+	/*border-radius: 30px 10px 30px 10px;*/
+	box-shadow: 10px 10px 10px #9E7C7C;
+}
+
+#autor-opis{
+	width: 600px;
+	position: relative;
+	font-size: 20px;
+}
+
+#autor-opis .bottom-left{
+	left: -20px;
+	bottom: -20px;
+}
+
+@-webkit-keyframes slika-animacija{
+	from{left: -500px;}
+	to{left: 0px;}
+}
+
+.border{
+position: absolute;
+width: 30%;
+height: 20%;
+border: 3px solid #E6D4CD;
+}
+
+.top-left{
+top: -30px;
+left: -30px;
+border-bottom: none;
+border-right: none;
+}
+
+.bottom-right{
+bottom: -30px;
+right: -30px;
+border-top: none;
+border-left: none;
+}
+	
